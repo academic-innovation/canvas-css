@@ -981,7 +981,7 @@ p.divisionLineYellow{
 }
 
 .sideBySideCallOut p, .sideBySideCallOut h2 {
-    color: #000000; 
+    color: #000000;
     /* added color black because of dark mode 2025-05-23*/
 }
 
@@ -1043,7 +1043,7 @@ p.divisionLineYellow{
 }
 
 .quoteContent blockquote {
-  font-weight: bold;
+  font-weight: normal;
   font-size: 1.2em;
   margin: 0 0 10px 0;
   padding-left: 0;
