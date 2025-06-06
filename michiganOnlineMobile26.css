@@ -1065,6 +1065,7 @@ p.divisionLineYellow{
   border-collapse: collapse; 
   /* font-family: inherit;  */
   text-align: center;
+  font-family: "Atkinson Hyperlegible", Arial;
 } 
  
 .umich-table-row-stripe th { 
@@ -1095,6 +1096,7 @@ p.divisionLineYellow{
   border-collapse: collapse;
   /* font-family: inherit; */
   /* border: 2px solid #FFFFFF; */
+  font-family: "Atkinson Hyperlegible", Arial;
   text-align: center;
 }
 
@@ -1129,7 +1131,9 @@ p.divisionLineYellow{
     .umich-accordion-a,
     .umich-accordion-b {
       margin: 2em 0;
-      font-family: sans-serif;
+      /* font-family: sans-serif; */
+      font-family: "Atkinson Hyperlegible", Arial;
+
     color: #000000; 
     /* added color black because of dark mode 2025-05-23*/
     }
