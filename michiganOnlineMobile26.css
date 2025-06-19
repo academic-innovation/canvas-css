@@ -1225,3 +1225,43 @@ uses wrong font but other pages use correct pre font  */
     } */
 }
 
+
+
+@import url('https://raw.githubusercontent.com/i-taylor/michigan-online/refs/heads/main/sandbox.css?token=GHSAT0AAAAAADFHCZPI732OV5VCTVAFJFU22CUDOKA');
+
+
+
+/* homepage continue learning button */
+.continueButton {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #0B57D0;
+    border-top: 3px solid #58B5F7;
+    color: white;
+    white-space: nowrap;
+    transition: font-size 0.4s ease;
+    cursor: pointer;
+    border-radius: 3px;
+    margin: 20px auto;
+}
+
+.continueButtonResponsive:hover {
+    font-size: 20px;
+    color: white;
+}
+
+@media (max-width: 500px) {
+  .continueButton {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .continueButton:hover {
+    font-size: 18px;
+  }
+}
