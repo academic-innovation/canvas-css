@@ -1270,7 +1270,7 @@ uses wrong font but other pages use correct pre font  */
     padding: 12px 24px;
     font-weight: bold;
     font-size: 18px;
-    text-decoration: none;
+    text-decoration: none !important;
     background-color: #0B57D0;
     border-top: 3px solid #58B5F7;
     color: white;
@@ -1281,18 +1281,24 @@ uses wrong font but other pages use correct pre font  */
     margin: 20px auto;
 }
 
-.continueButtonResponsive:hover {
+.continueButton:hover {
     font-size: 20px;
     color: white;
+    text-decoration-color: white;
 }
 
 @media (max-width: 500px) {
   .continueButton {
-    font-size: 16px;
+    font-size: 18px;
     padding: 10px 20px;
   }
 
   .continueButton:hover {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
+
+
+
+
+
