@@ -961,7 +961,7 @@ p.divisionLineYellow{
     flex-wrap: wrap;
     gap: 20px;
     justify-content: flex-start; /* default */
-      align-items: flex-start; /* Prevents height equalization */
+    align-items: flex-start; /* Prevents height equalization */
     margin-top: 10px;
     color: #000000; 
     /* added color black because of dark mode 2025-05-23*/
@@ -997,6 +997,27 @@ p.divisionLineYellow{
         max-width: 500px;
     }
 }
+
+
+
+
+/* ADDED 2025-06-24 - SIDE BY SIDE CALLOUTS STRETCH WHILE OTHERS ARE NORMAL OR STRETCH */
+/* ✅ NEW: Neutral styling class */
+.sideBySideCallOut.neutralCallout {
+    background: none;
+    border-top: none;
+}
+
+/* ✅ NEW: Stretch align-items only if exactly 2 styled callouts */
+.sideBySideCallOutCon:has(
+    .sideBySideCallOut:not(.neutralCallout)
+):has(
+    .sideBySideCallOut:not(.neutralCallout):nth-of-type(2):last-child
+) {
+    align-items: stretch;
+}
+
+
 
 
 /* NEW BUDDY QUOTES - DELETED XINTIAN ORIGINAL - REFER TO MICHIGANONLINE22.CSS */
