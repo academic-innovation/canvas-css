@@ -1094,7 +1094,7 @@ p.divisionLineYellow{
   width: 100%; 
   border-collapse: collapse; 
   /* font-family: inherit;  */
-  text-align: center;
+  text-align: left;
   font-family: "Atkinson Hyperlegible", Arial;
 } 
  
@@ -1127,7 +1127,7 @@ p.divisionLineYellow{
   /* font-family: inherit; */
   /* border: 2px solid #FFFFFF; */
   font-family: "Atkinson Hyperlegible", Arial;
-  text-align: center;
+  text-align: left;
 }
 
 .umich-table-col-stripe th {
@@ -1295,4 +1295,5 @@ uses wrong font but other pages use correct pre font  */
   .continueButton:hover {
     font-size: 20px;
   }
+
 }
