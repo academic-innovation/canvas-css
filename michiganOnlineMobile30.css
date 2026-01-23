@@ -1151,7 +1151,33 @@ p.divisionLineYellow{
   background-color: #FCF5CE; /* light yellow */
 }
 
+/* NEW TABLE REQUEST FROM 2026-01-24 THURSDAY - CREATED 2026-01-23 FRIDAY - ONLY HEADER BLUE */
 
+.umich-table-plain { 
+  width: 100%; 
+  border-collapse: collapse; 
+  /* font-family: inherit;  */
+  text-align: left;
+  font-family: "Atkinson Hyperlegible", Arial;
+} 
+/*table, td, th {
+  border: 3px solid red;
+}*/
+
+ 
+.umich-table-plain th { 
+  background-color: #00274C; /* UM Blue */ 
+  color: #FFFFFF; 
+  padding: 0.5em; 
+  border: 1px solid #00274C;
+}
+
+.umich-table-plain td {
+  padding: 0.5em;
+  border: 2px solid #FFFFFF;
+  color: #000000;
+  border: 1px solid #00274C;
+}
 
 
 
@@ -1297,3 +1323,4 @@ uses wrong font but other pages use correct pre font  */
   }
 
 }
+
