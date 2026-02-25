@@ -113,6 +113,10 @@
     margin-top: 20px
 }
 
+.pageBody .header img {
+  border-radius: 50%;
+}
+
 /* Landing Page Styles */
 
 .landingPageHeader {
