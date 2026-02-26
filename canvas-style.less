@@ -1,58 +1,161 @@
-/* Color Variables */
---um-blue: #00274C;
---um-maize: #FFCB05;
+// COLORS
+// Primary Palette
+@um-blue: #00274C;
+@um-maize: #FFCB05;
+@white: #ffffff;
 
+// Secondary Palette
+@blue-cta: #1022A0;
+@blue-cool: #305CDE;
+@blue-warm: #59B5F7;
+@blue-warm-light: #acdafb;
+@blue-warm-extra-light: #def0fd;
+@orange: #FF5B1A;
+@yellow-light: #FFEA9B;
+@yellow-extra-light: #fffbeb;
+
+// Grey Palette
+@neutral-extra-light: #f8f8f8;
+@neutral-light: #EAEBEA;
+@neutral-medium: #d5d7d5;
+@neutral-border: #acafab;
+@neutral-dark: #797c78;
+
+// TYPOGRAPHY
+.type-body() {
+    font-family: "Atkinson Hyperlegible", Arial, sans-serif;
+}
+.type-display-serif() {
+    font-family: "Noto Serif", Georgia, serif; 
+}
+.type-display-sans() {
+    font-family: "Montserrat", Verdana, sans-serif;
+}
+
+// LINE WEIGHTS
+@line-thin: 1px;
+@line-default: 2px;
+@line-thick: 4px;
+
+// ROUND CORNERS
+.rounded-small() {border-radius: 20px;}
+.rounded-medium() {border-radius: 40px;}
+.rounded-big() {border-radius: 60px;}
+
+
+
+// The New Rebranded Canvas =^o.o^=
+.new-canvas {
+    color: @um-blue;
+    border-top: @line-default solid @blue-warm;
+    
+    p {
+        .type-body;
+        font-size: 18px;
+        line-height: 1.5rem;
+    }
+    
+    a {
+        color: @blue-cta;
+    }
+    
+    h2, h3, h4, h5, h6 {
+        .type-display-sans;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    div, section {box-sizing: border-box;}
+    
+    section {
+        border-bottom: @line-thin solid @neutral-border; 
+        padding: 2rem 1rem;
+    }
+    
+    .instructor {
+        border: @line-thin solid @neutral-border;
+        .rounded-small;
+        padding: 1rem;
+        
+        img {
+            display: block;
+            border: @line-thick solid @um-blue;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        
+        h2 {
+            margin: 1rem 0 0 0;
+        }
+        
+        hr {
+            border: @line-default solid @blue-cool;
+            width: 1.5rem;
+            margin: 1rem 0 0 0;
+        }
+        
+        & > div {
+            &:last-of-type {
+                background-color: @blue-warm-extra-light;
+                padding: 1rem;
+                .rounded-small;
+            }
+        }
+    }
+}
+
+
+
+// REFACTOR
 .fullImage {
     width: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    font-family: "Atkinson Hyperlegible", Arial;
+}
+
+.header h2 {
+    text-align: left;
+    margin: 0;
+    padding-left: 0;
+    width: 100%;
+    line-height: 1;   
+    margin-top: 5px;
+}
+
+
+.header img {
+    width: 40px;
+    margin-right: 10px;
+    float: left;
 }
 
 .canvasPageCon {
     max-width:1240px;
     font-family: "Atkinson Hyperlegible", Arial;
-    color: var(--um-blue);
-    
-    h2{
-        font-weight: bold;
-        font-size: 1.76rem;
-        text-align: left;
-        font-family: "Atkinson Hyperlegible", Arial;
-    }
-    
-    h3{
-        color: #00274C;
-        font-weight: bold;
-        font-size: 1.4rem;
-        text-align: left;
-    }
-    
-    .pageBody {
-
-    }
-    
-    .header {
-        display: flex;
-        align-items: flex-start;
-        justify-content: left;
-        font-family: "Atkinson Hyperlegible", Arial;
-
-        h2 {
-            text-align: left;
-            margin: 0;
-            padding-left: 0;
-            width: 100%;
-            line-height: 1;   
-            margin-top: 5px;
-        }
-        
-        img {
-            width: 40px;
-            margin-right: 10px;
-            float: left;
-        }
-    }
 }
 
-.canvasPageCon 
+.canvasPageCon h2{
+    color: #00274C;
+    font-weight: bold;
+    font-size: 1.76rem;
+    text-align: left;
+    font-family: "Atkinson Hyperlegible", Arial;
+}
+
+.canvasPageCon h3{
+    color: #00274C;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align: left;
+}
 
 .pageBody {
     padding:0 35px;
@@ -1355,7 +1458,6 @@ uses wrong font but other pages use correct pre font  */
     font-size: 20px;
   }
 }
-
 
 
 
