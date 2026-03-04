@@ -36,7 +36,7 @@
   border-radius: 20px;
   padding: 1rem;
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1100px) {
   .new-canvas .instructor {
     display: flex;
   }
@@ -56,7 +56,7 @@
   width: 1.5rem;
   margin: 1rem 0 0 0;
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1100px) {
   .new-canvas .instructor > div:first-of-type {
     flex: none;
     width: 40%;
@@ -68,7 +68,7 @@
   padding: 1rem;
   border-radius: 20px;
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1100px) {
   .new-canvas .instructor > div:last-of-type {
     margin-left: 1rem;
   }
