@@ -95,18 +95,19 @@
   src: url(https://fonts.gstatic.com/s/notoserif/v33/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCjwA.ttf) format('truetype');
 }
 .css-1ta5ds2-baseButton__content {
-  border: 1px solid #1022A0;
-  border-radius: 2rem;
-  background-color: #1022A0;
-  color: #ffffff;
-  font-family: "Atkinson Hyperlegible Next", Arial, sans-serif;
-  font-weight: 700;
+  border: 2px solid #1022A0 !important;
+  border-radius: 2rem !important;
+  background-color: #1022A0 !important;
+  color: #ffffff !important;
+  font-family: "Atkinson Hyperlegible Next", Arial, sans-serif !important;
+  font-weight: 700 !important;
+  padding: 0.25rem 2rem !important;
 }
 h1.page-title {
   font-family: "Noto Serif", Georgia, serif;
   font-weight: 300;
   margin: 1rem 0;
-  color: #00274C;
+  color: #00274C !important;
 }
 .new-canvas {
   color: #00274C;
@@ -176,7 +177,7 @@ h1.page-title {
   font-family: "Atkinson Hyperlegible Next", Arial, sans-serif;
   color: #1022A0;
   font-weight: 700;
-  text-decoration: none;
+  text-decoration: none !important;
   display: inline-block;
   line-height: 1rem;
   padding-bottom: 0px;
@@ -205,6 +206,11 @@ h1.page-title {
 }
 .new-canvas h2 {
   font-size: 2rem;
+  line-height: 2.25rem;
+}
+.new-canvas h3 {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
 }
 .new-canvas ul,
 .new-canvas ol {
