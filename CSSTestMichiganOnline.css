@@ -102,35 +102,74 @@
   font-family: "Atkinson Hyperlegible Next", Arial, sans-serif;
   font-weight: 700;
 }
+h1.page-title {
+  font-family: "Noto Serif", Georgia, serif;
+  font-weight: 300;
+  margin: 1rem 0;
+  color: #00274C;
+}
 .new-canvas {
   color: #00274C;
   border-top: 2px solid #59B5F7;
 }
-.new-canvas p {
+.new-canvas p,
+.new-canvas ul,
+.new-canvas ol {
   font-family: "Atkinson Hyperlegible Next", Arial, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5rem;
   font-weight: 400;
   font-style: normal;
 }
+@media screen and (min-width: 600px) {
+  .new-canvas p,
+  .new-canvas ul,
+  .new-canvas ol {
+    font-size: 18px;
+  }
+}
 .new-canvas p b,
-.new-canvas p strong {
+.new-canvas ul b,
+.new-canvas ol b,
+.new-canvas p strong,
+.new-canvas ul strong,
+.new-canvas ol strong {
   font-weight: 700;
 }
 .new-canvas p b i,
+.new-canvas ul b i,
+.new-canvas ol b i,
 .new-canvas p strong i,
+.new-canvas ul strong i,
+.new-canvas ol strong i,
 .new-canvas p b em,
-.new-canvas p strong em {
+.new-canvas ul b em,
+.new-canvas ol b em,
+.new-canvas p strong em,
+.new-canvas ul strong em,
+.new-canvas ol strong em {
   font-style: italic;
 }
 .new-canvas p i,
-.new-canvas p em {
+.new-canvas ul i,
+.new-canvas ol i,
+.new-canvas p em,
+.new-canvas ul em,
+.new-canvas ol em {
   font-style: italic;
 }
 .new-canvas p i b,
+.new-canvas ul i b,
+.new-canvas ol i b,
 .new-canvas p em b,
+.new-canvas ul em b,
+.new-canvas ol em b,
 .new-canvas p i strong,
-.new-canvas p em strong {
+.new-canvas ul i strong,
+.new-canvas ol i strong,
+.new-canvas p em strong,
+.new-canvas ul em strong,
+.new-canvas ol em strong {
   font-weight: 700;
 }
 .new-canvas a {
@@ -167,6 +206,14 @@
 .new-canvas h2 {
   font-size: 2rem;
 }
+.new-canvas ul,
+.new-canvas ol {
+  margin: 0;
+  padding-left: 2rem;
+}
+.new-canvas li::marker {
+  color: #305CDE;
+}
 .new-canvas div,
 .new-canvas section {
   box-sizing: border-box;
@@ -174,6 +221,31 @@
 .new-canvas section {
   border-bottom: 1px solid #acafab;
   padding: 2rem 1rem;
+}
+.new-canvas section.text-block {
+  padding: 4rem 1rem;
+}
+.new-canvas section.text-block h2 {
+  margin: 0;
+}
+.new-canvas section.text-block h3 {
+  margin: 3rem 0 0 0;
+}
+.new-canvas section.text-block h3:after {
+  content: '';
+  display: block;
+  width: 1.5rem;
+  height: 4px;
+  margin: 1rem 0 0 0;
+}
+.new-canvas section.text-block h3:nth-of-type(3n+1):after {
+  background-color: #FF5B1A;
+}
+.new-canvas section.text-block h3:nth-of-type(3n+2):after {
+  background-color: #59B5F7;
+}
+.new-canvas section.text-block h3:nth-of-type(3n+3):after {
+  background-color: #FFCB05;
 }
 .new-canvas .instructor {
   border: 1px solid #acafab;
@@ -195,10 +267,13 @@
 .new-canvas .instructor h2 {
   margin: 1rem 0 0 0;
 }
-.new-canvas .instructor hr {
-  border: 2px solid #305CDE;
+.new-canvas .instructor h2:after {
+  content: '';
+  display: block;
   width: 1.5rem;
+  height: 4px;
   margin: 1rem 0 0 0;
+  background-color: #305CDE;
 }
 @media screen and (min-width: 1100px) {
   .new-canvas .instructor > div:first-of-type {
