@@ -101,13 +101,19 @@
   color: #ffffff !important;
   font-family: "Atkinson Hyperlegible Next", Arial, sans-serif !important;
   font-weight: 700 !important;
-  padding: 0.25rem 2rem !important;
+  padding: 1px 1rem !important;
 }
 h1.page-title {
   font-family: "Noto Serif", Georgia, serif;
-  font-weight: 300;
-  margin: 1rem 0;
+  font-weight: 300 !important;
+  line-height: 2.75rem;
+  margin: 1rem 0 !important;
   color: #00274C !important;
+}
+a.external:hover span,
+a.external:focus span,
+a.external:active span {
+  text-decoration: none !important;
 }
 .new-canvas {
   color: #00274C;
@@ -177,16 +183,13 @@ h1.page-title {
   font-family: "Atkinson Hyperlegible Next", Arial, sans-serif;
   color: #1022A0;
   font-weight: 700;
-  text-decoration: none !important;
-  display: inline-block;
-  line-height: 1rem;
-  padding-bottom: 0px;
-  border-bottom: 2px solid #1022A0;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 2px;
 }
 .new-canvas a:hover {
   color: #00274C;
-  border-bottom-color: #FF5B1A;
-  padding-bottom: 2px;
+  text-decoration-color: #FF5B1A;
+  text-underline-offset: 4px;
   transition: all ease 0.2s;
 }
 .new-canvas h2,
@@ -232,7 +235,7 @@ h1.page-title {
   padding: 4rem 1rem;
 }
 .new-canvas section.text-block h2 {
-  margin: 0;
+  margin: 0 0 2rem 0;
 }
 .new-canvas section.text-block h3 {
   margin: 3rem 0 0 0;
