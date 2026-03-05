@@ -183,13 +183,13 @@ a.external:active span {
   font-family: "Atkinson Hyperlegible Next", Arial, sans-serif;
   color: #1022A0;
   font-weight: 700;
-  text-underline-offset: 2px;
-  text-decoration-thickness: 2px;
+  text-underline-offset: 2px !important;
+  text-decoration-thickness: 2px !important;
 }
 .new-canvas a:hover {
   color: #00274C;
-  text-decoration-color: #FF5B1A;
-  text-underline-offset: 4px;
+  text-decoration-color: #FF5B1A !important;
+  text-underline-offset: 4px !important;
   transition: all ease 0.2s;
 }
 .new-canvas h2,
