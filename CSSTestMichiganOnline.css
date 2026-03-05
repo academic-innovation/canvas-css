@@ -256,6 +256,13 @@ a.external:active span {
 .new-canvas section.text-block h3:nth-of-type(3n+3):after {
   background-color: #FFCB05;
 }
+.new-canvas section.video-block {
+  background-color: #fffbeb;
+}
+.new-canvas section.video-block iframe {
+  display: block;
+  margin: 2rem auto;
+}
 .new-canvas .instructor {
   border: 1px solid #acafab;
   border-radius: 20px;
