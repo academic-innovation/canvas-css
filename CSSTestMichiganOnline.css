@@ -94,8 +94,7 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/notoserif/v33/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCjwA.ttf) format('truetype');
 }
-.css-1ta5ds2-baseButton__content,
-.css-1ctebrv-baseButton__content {
+.css-1ta5ds2-baseButton__content {
   border: 2px solid #1022A0 !important;
   border-radius: 2rem !important;
   background-color: #1022A0 !important;
