@@ -188,7 +188,7 @@ a.external:active span {
 }
 .new-canvas a:hover {
   color: #00274C;
-  text-decoration-color: #FF5B1A !important;
+  text-decoration-color: #305CDE !important;
   text-underline-offset: 4px !important;
   transition: all ease 0.2s;
 }
