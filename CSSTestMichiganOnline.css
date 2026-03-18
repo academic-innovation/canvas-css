@@ -341,7 +341,7 @@ a.external:active span {
   top: 0;
 }
 .new-canvas section.display-header .collage > div:first-of-type {
-  background: url(collage-accent_1.svg) no-repeat top left;
+  background: url('https://github.com/i-taylor/michigan-online/blob/main/collage-accent_1.svg') no-repeat top left;
   background-size: contain;
   width: 55%;
   height: 100%;
@@ -352,7 +352,7 @@ a.external:active span {
   width: 100%;
   height: auto;
   display: block;
-  mask-image: url(collage-mask_1.svg);
+  mask-image: url('https://github.com/i-taylor/michigan-online/blob/main/collage-mask_1.svg');
   mask-position: right center;
   mask-repeat: no-repeat;
 }
