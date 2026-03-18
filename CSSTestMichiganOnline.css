@@ -218,6 +218,17 @@ a.external:active span {
   transition: all ease 0.2s;
   cursor: pointer;
 }
+.new-canvas .btn.icon-trailing,
+.new-canvas button.icon-trailing {
+  padding-right: 1rem;
+}
+.new-canvas .btn.icon-trailing svg,
+.new-canvas button.icon-trailing svg {
+  height: 1rem;
+  width: auto;
+  display: inline;
+  margin: 0 0 -2px 0.5rem;
+}
 .new-canvas p.tag {
   display: inline-block;
   font-family: "Montserrat", Verdana, sans-serif;
