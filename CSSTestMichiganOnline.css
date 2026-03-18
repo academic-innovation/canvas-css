@@ -193,6 +193,31 @@ a.external:active span {
   text-underline-offset: 4px !important;
   transition: all ease 0.2s;
 }
+.new-canvas .btn,
+.new-canvas button {
+  border: 2px solid #1022A0;
+  border-radius: 40px;
+  background-color: #1022A0;
+  color: #ffffff;
+  font-family: "Atkinson Hyperlegible Next", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+}
+@media screen and (min-width: 600px) {
+  .new-canvas .btn,
+  .new-canvas button {
+    font-size: 18px;
+  }
+}
+.new-canvas .btn:hover,
+.new-canvas button:hover {
+  background-color: #ffffff;
+  color: #1022A0;
+  transition: all ease 0.2s;
+  cursor: pointer;
+}
 .new-canvas p.tag {
   display: inline-block;
   font-family: "Montserrat", Verdana, sans-serif;
@@ -277,6 +302,25 @@ a.external:active span {
 .new-canvas section.video-block iframe {
   display: block;
   margin: 2rem auto;
+}
+.new-canvas section.btn-footer {
+  text-align: center;
+  border-bottom: none;
+}
+.new-canvas section.mo-logo-footer {
+  border-top: 2px solid #FFCB05;
+  border-bottom: 2px solid #FFCB05;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 1100px) {
+  .new-canvas section.mo-logo-footer {
+    padding: 2rem 0;
+  }
+}
+.new-canvas section.mo-logo-footer img {
+  display: block;
+  margin: 0 auto;
 }
 .new-canvas section.display-header {
   display: flex;
