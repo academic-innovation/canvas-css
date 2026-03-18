@@ -118,6 +118,7 @@ a.external:active span {
 .new-canvas {
   color: #00274C;
   border-top: 2px solid #59B5F7;
+  max-width: 2000px;
 }
 .new-canvas p,
 .new-canvas ul,
@@ -192,6 +193,18 @@ a.external:active span {
   text-underline-offset: 4px !important;
   transition: all ease 0.2s;
 }
+.new-canvas p.tag {
+  display: inline-block;
+  font-family: "Montserrat", Verdana, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 0.8rem;
+  text-transform: uppercase;
+  border: 1px solid #305CDE;
+  border-radius: 5px;
+  padding: 0.5rem 0.75rem;
+  margin: 0;
+}
 .new-canvas h2,
 .new-canvas h3,
 .new-canvas h4 {
@@ -231,8 +244,10 @@ a.external:active span {
   border-bottom: 1px solid #acafab;
   padding: 2rem 1rem;
 }
-.new-canvas section.text-block {
-  padding: 4rem 1rem;
+@media screen and (min-width: 800px) {
+  .new-canvas section {
+    padding: 4rem 1rem;
+  }
 }
 .new-canvas section.text-block h2 {
   margin: 0 0 2rem 0;
@@ -263,6 +278,132 @@ a.external:active span {
   display: block;
   margin: 2rem auto;
 }
+.new-canvas section.display-header {
+  display: flex;
+  flex-direction: column-reverse;
+  border-bottom: none;
+}
+@media screen and (min-width: 1100px) {
+  .new-canvas section.display-header {
+    display: block;
+  }
+}
+.new-canvas section.display-header + .text-block {
+  padding-top: 0;
+}
+@media screen and (min-width: 1100px) {
+  .new-canvas section.display-header + .text-block {
+    padding-top: 1rem;
+  }
+}
+.new-canvas section.display-header h2 {
+  font-family: "Noto Serif", Georgia, serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 2.75rem;
+}
+.new-canvas section.display-header h2 strong {
+  font-family: "Montserrat", Verdana, sans-serif;
+  font-weight: 800;
+  display: inline-block;
+}
+.new-canvas section.display-header .heading {
+  margin: 0 0 2rem 0;
+}
+@media screen and (min-width: 1100px) {
+  .new-canvas section.display-header .heading {
+    display: flex;
+    align-items: center;
+  }
+  .new-canvas section.display-header .heading > div {
+    width: 50%;
+  }
+  .new-canvas section.display-header .heading > div:first-of-type {
+    padding-right: 1rem;
+  }
+}
+.new-canvas section.display-header .um-logo {
+  display: none;
+}
+@media screen and (min-width: 1100px) {
+  .new-canvas section.display-header .um-logo {
+    display: block;
+    width: 100px;
+    height: auto;
+  }
+}
+.new-canvas section.display-header .collage {
+  position: relative;
+  aspect-ratio: 1.25;
+}
+.new-canvas section.display-header .collage > div {
+  position: absolute;
+  top: 0;
+}
+.new-canvas section.display-header .collage > div:first-of-type {
+  background: url(collage-accent_1.svg) no-repeat top left;
+  background-size: contain;
+  width: 55%;
+  height: 100%;
+}
+.new-canvas section.display-header .collage img {
+  aspect-ratio: 1.33333333;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  display: block;
+  mask-image: url(collage-mask_1.svg);
+  mask-position: right center;
+  mask-repeat: no-repeat;
+}
+@media screen and (min-width: 1100px) {
+}
+.new-canvas section.display-header .nav-links {
+  border: 2px solid #1022A0;
+  margin-bottom: 2rem;
+}
+.new-canvas section.display-header .nav-links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.new-canvas section.display-header .nav-links li {
+  border-bottom: 2px solid #FFCB05;
+}
+.new-canvas section.display-header .nav-links li:last-of-type {
+  border-bottom: none;
+}
+@media screen and (min-width: 800px) {
+  .new-canvas section.display-header .nav-links ul {
+    display: flex;
+  }
+  .new-canvas section.display-header .nav-links li {
+    border-bottom: none;
+    border-right: 2px solid #FFCB05;
+    flex: 1;
+    align-content: center;
+    padding: 0 0.5rem;
+  }
+  .new-canvas section.display-header .nav-links li:last-of-type {
+    border-right: none;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .new-canvas section.display-header .nav-links {
+    margin-bottom: 0;
+  }
+}
+.new-canvas .sub-title {
+  background-color: #def0fd;
+  padding: 1px 1rem;
+  display: none;
+}
+@media screen and (min-width: 1100px) {
+  .new-canvas .sub-title {
+    display: block;
+  }
+}
 .new-canvas .instructor {
   border: 1px solid #acafab;
   border-radius: 20px;
@@ -279,6 +420,7 @@ a.external:active span {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  object-fit: cover;
 }
 .new-canvas .instructor h2 {
   margin: 1rem 0 0 0;
@@ -469,9 +611,6 @@ a.external:active span {
   font-weight: bold;
   font-size: 18px;
   text-decoration: none !important;
-  background-color: #f542bf;
-  border-top: 3px solid #87f542;
-  color: blue;
   flex: 1 1 20%;
   white-space: normal;
   transition-duration: 0.4s;
