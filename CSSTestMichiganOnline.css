@@ -301,6 +301,7 @@ a.external:active span {
   font-weight: 300;
   font-size: 2.5rem;
   line-height: 2.75rem;
+  margin: 2rem 0;
 }
 .new-canvas section.display-header h2 strong {
   font-family: "Montserrat", Verdana, sans-serif;
@@ -341,7 +342,7 @@ a.external:active span {
   top: 0;
 }
 .new-canvas section.display-header .collage > div:first-of-type {
-  background: url('https://github.com/i-taylor/michigan-online/blob/main/collage-accent_1.svg') no-repeat top left;
+  background: url('https://raw.githubusercontent.com/i-taylor/michigan-online/0c0c8ccf6e584d843ca21a8d400b511eba2c91fb/collage-accent_1.svg') no-repeat top left;
   background-size: contain;
   width: 55%;
   height: 100%;
@@ -352,11 +353,9 @@ a.external:active span {
   width: 100%;
   height: auto;
   display: block;
-  mask-image: url('https://github.com/i-taylor/michigan-online/blob/main/collage-mask_1.svg');
+  mask-image: url('https://raw.githubusercontent.com/i-taylor/michigan-online/0c0c8ccf6e584d843ca21a8d400b511eba2c91fb/collage-mask_1.svg');
   mask-position: right center;
   mask-repeat: no-repeat;
-}
-@media screen and (min-width: 1100px) {
 }
 .new-canvas section.display-header .nav-links {
   border: 2px solid #1022A0;
