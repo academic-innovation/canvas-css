@@ -264,6 +264,10 @@ a.external:active span {
   font-size: 1.5rem;
   line-height: 1.75rem;
 }
+.new-canvas h4 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
 .new-canvas ul,
 .new-canvas ol {
   margin: 0;
@@ -306,6 +310,12 @@ a.external:active span {
 }
 .new-canvas section.text-block h3:nth-of-type(3n+3):after {
   background-color: #FFCB05;
+}
+.new-canvas section.text-block .callout-box h3 {
+  margin: 1rem 0;
+}
+.new-canvas section.text-block .callout-box h3:after {
+  display: none;
 }
 .new-canvas section.video-block {
   background-color: #fffbeb;
@@ -503,6 +513,28 @@ a.external:active span {
   .new-canvas .instructor > div:last-of-type {
     margin-left: 1rem;
   }
+}
+.new-canvas .callout-box {
+  background-color: #F5F0F6;
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  border-left: 16px solid #702082;
+}
+@media screen and (min-width: 600px) {
+  .new-canvas .callout-box {
+    padding: 2rem 3rem;
+  }
+}
+.new-canvas .callout-box p.tag {
+  margin: 1rem 0;
+}
+.new-canvas .callout-box.reflection {
+  background-color: #00274C;
+  color: #ffffff;
+  border-left-color: #FFCB05;
+}
+.new-canvas .callout-box.reflection p.tag {
+  border-color: #ffffff;
 }
 .fullImage {
   width: 100%;
