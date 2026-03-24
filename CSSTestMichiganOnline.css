@@ -311,6 +311,9 @@ a.external:active span {
 .new-canvas section.text-block h3:nth-of-type(3n+3):after {
   background-color: #FFCB05;
 }
+.new-canvas section.text-block h4 {
+  margin: 2rem 0 1rem 0;
+}
 .new-canvas section.text-block .callout-box h3 {
   margin: 1rem 0;
 }
@@ -557,6 +560,7 @@ a.external:active span {
 .sophia-says {
   background-color: pink;
   padding: 1rem;
+  margin: 2rem 0;
   border-bottom-right-radius: 2rem;
   max-width: 900px;
 }
