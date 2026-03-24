@@ -115,16 +115,6 @@ a.external:focus span,
 a.external:active span {
   text-decoration: none !important;
 }
-.sophia-says {
-  background-color: pink;
-  font-family: "Noto Serif", Georgia, serif;
-  font-weight: 300;
-  padding: 1rem;
-  border-bottom-right-radius: 2rem;
-}
-.sophia-says:before {
-  content: '🍓';
-}
 .new-canvas {
   color: #00274C;
   border-top: 2px solid #59B5F7;
@@ -563,6 +553,19 @@ a.external:active span {
 }
 .new-canvas .callout-box.reflection p.tag {
   border-color: #ffffff;
+}
+.sophia-says {
+  background-color: pink;
+  padding: 1rem;
+  border-bottom-right-radius: 2rem;
+  max-width: 900px;
+}
+.sophia-says:before {
+  content: '🍓';
+}
+.sophia-says p {
+  font-family: "Noto Serif", Georgia, serif;
+  font-weight: 300;
 }
 .fullImage {
   width: 100%;
