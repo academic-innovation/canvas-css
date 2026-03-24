@@ -320,9 +320,27 @@ a.external:active span {
 .new-canvas section.video-block {
   background-color: #fffbeb;
 }
+@media screen and (min-width: 800px) {
+  .new-canvas section.video-block {
+    padding-top: 2rem;
+  }
+}
+.new-canvas section.video-block h2 {
+  text-align: center;
+}
 .new-canvas section.video-block iframe {
   display: block;
   margin: 2rem auto;
+}
+.new-canvas section.video-block .video-tag-wrapper {
+  text-align: right;
+  margin: 0 0 1.5rem 0;
+}
+.new-canvas section.video-block.highlight {
+  background-color: #FFEA9B;
+}
+.new-canvas section.video-block.blue {
+  background-color: #def0fd;
 }
 .new-canvas section.btn-footer {
   text-align: center;
