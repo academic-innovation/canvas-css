@@ -118,7 +118,6 @@ a.external:active span {
 .new-canvas {
   color: #00274C;
   border-top: 2px solid #59B5F7;
-  max-width: 2000px;
 }
 .new-canvas p,
 .new-canvas ul,
@@ -229,7 +228,7 @@ a.external:active span {
   display: inline;
   margin: 0 0 -2px 0.5rem;
 }
-.new-canvas p.tag {
+.new-canvas .tag {
   display: inline-block;
   font-family: "Montserrat", Verdana, sans-serif;
   font-size: 0.8rem;
@@ -315,7 +314,7 @@ a.external:active span {
   margin: 2rem 0 1rem 0;
 }
 .new-canvas section.text-block .callout-box h3 {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 .new-canvas section.text-block .callout-box h3:after {
   display: none;
@@ -546,7 +545,7 @@ a.external:active span {
     padding: 2rem 3rem;
   }
 }
-.new-canvas .callout-box p.tag {
+.new-canvas .callout-box .tag {
   margin: 1rem 0;
 }
 .new-canvas .callout-box.reflection {
@@ -554,7 +553,15 @@ a.external:active span {
   color: #ffffff;
   border-left-color: #FFCB05;
 }
-.new-canvas .callout-box.reflection p.tag {
+.new-canvas .callout-box.reflection .tag {
+  border-color: #ffffff;
+}
+.new-canvas .callout-box.highlight {
+  background-color: #305CDE;
+  color: #ffffff;
+  border-left-color: #FFCB05;
+}
+.new-canvas .callout-box.highlight .tag {
   border-color: #ffffff;
 }
 .sophia-says {
