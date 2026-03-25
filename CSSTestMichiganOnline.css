@@ -548,12 +548,12 @@ a.external:active span {
 .new-canvas .callout-box .tag {
   margin: 1rem 0;
 }
-.new-canvas .callout-box.reflection {
+.new-canvas .callout-box.action {
   background-color: #00274C;
   color: #ffffff;
   border-left-color: #FFCB05;
 }
-.new-canvas .callout-box.reflection .tag {
+.new-canvas .callout-box.action .tag {
   border-color: #ffffff;
 }
 .new-canvas .callout-box.highlight {
