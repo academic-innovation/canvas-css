@@ -95,8 +95,9 @@
   src: url(https://fonts.gstatic.com/s/notoserif/v33/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCjwA.ttf) format('truetype');
 }
 .module-sequence-footer-content {
-  padding-top: 2rem !important;
+  padding: 2rem 0 !important;
   border-top: none !important;
+  height: auto !important;
 }
 .module-sequence-footer-content a.css-1x6puw2-view--inlineBlock-baseButton {
   border-radius: 2rem !important;
