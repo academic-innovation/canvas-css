@@ -490,6 +490,7 @@ a.external:active span {
 }
 .new-canvas section.accordion h2 {
   text-align: center;
+  margin: 0 0 2rem 0;
 }
 .new-canvas section.accordion details {
   border: solid #FF5B1A;
