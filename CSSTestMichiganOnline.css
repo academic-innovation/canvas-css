@@ -485,6 +485,51 @@ a.external:active span {
     margin-bottom: 0;
   }
 }
+.new-canvas section.accordion {
+  border-bottom: none;
+}
+.new-canvas section.accordion h2 {
+  text-align: center;
+}
+.new-canvas section.accordion details {
+  border: solid #FF5B1A;
+  border-width: 2px 0 0;
+  margin-bottom: 0;
+  transition: all ease 0.2s;
+}
+.new-canvas section.accordion details:last-child {
+  border-width: 2px 0;
+}
+.new-canvas section.accordion details[open] {
+  background-color: #ffffff;
+}
+.new-canvas section.accordion details[open] summary:after {
+  transform: rotate(180deg);
+}
+.new-canvas section.accordion summary {
+  position: relative;
+  list-style-type: none;
+  padding: 1.5rem 4rem 1.5rem 1.5rem;
+  font-family: "Atkinson Hyperlegible Next", Arial, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1022A0;
+}
+.new-canvas section.accordion summary:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 1.5rem;
+  top: 0;
+  width: 1.5rem;
+  height: 100%;
+  background: url('https://raw.githubusercontent.com/academic-innovation/canvas-css/f98f6887b4e48d14e890384071e5c466178926dd/accordion-arrow.svg') no-repeat center;
+  background-size: 1.5rem;
+  transition: all ease 0.2s;
+}
+.new-canvas section.accordion summary + div {
+  padding: 0.25rem 1.5rem;
+}
 .new-canvas .sub-title {
   background-color: #def0fd;
   padding: 1px 1rem;
