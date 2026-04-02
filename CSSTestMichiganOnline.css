@@ -329,6 +329,7 @@ a.external:active span {
 }
 .new-canvas section.text-block iframe {
   margin: auto;
+  display: block;
 }
 .new-canvas section.video-block {
   background-color: #fffbeb;
