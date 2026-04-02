@@ -327,6 +327,9 @@ a.external:active span {
 .new-canvas section.text-block .callout-box h3:after {
   display: none;
 }
+.new-canvas section.text-block iframe {
+  margin: auto;
+}
 .new-canvas section.video-block {
   background-color: #fffbeb;
 }
