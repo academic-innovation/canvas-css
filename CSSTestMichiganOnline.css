@@ -129,7 +129,8 @@ a.external:active span {
 }
 .new-canvas p,
 .new-canvas ul,
-.new-canvas ol {
+.new-canvas ol,
+.new-canvas table {
   font-family: "Atkinson Hyperlegible Next", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5rem;
@@ -139,52 +140,65 @@ a.external:active span {
 @media screen and (min-width: 600px) {
   .new-canvas p,
   .new-canvas ul,
-  .new-canvas ol {
+  .new-canvas ol,
+  .new-canvas table {
     font-size: 18px;
   }
 }
 .new-canvas p b,
 .new-canvas ul b,
 .new-canvas ol b,
+.new-canvas table b,
 .new-canvas p strong,
 .new-canvas ul strong,
-.new-canvas ol strong {
+.new-canvas ol strong,
+.new-canvas table strong {
   font-weight: 700;
 }
 .new-canvas p b i,
 .new-canvas ul b i,
 .new-canvas ol b i,
+.new-canvas table b i,
 .new-canvas p strong i,
 .new-canvas ul strong i,
 .new-canvas ol strong i,
+.new-canvas table strong i,
 .new-canvas p b em,
 .new-canvas ul b em,
 .new-canvas ol b em,
+.new-canvas table b em,
 .new-canvas p strong em,
 .new-canvas ul strong em,
-.new-canvas ol strong em {
+.new-canvas ol strong em,
+.new-canvas table strong em {
   font-style: italic;
 }
 .new-canvas p i,
 .new-canvas ul i,
 .new-canvas ol i,
+.new-canvas table i,
 .new-canvas p em,
 .new-canvas ul em,
-.new-canvas ol em {
+.new-canvas ol em,
+.new-canvas table em {
   font-style: italic;
 }
 .new-canvas p i b,
 .new-canvas ul i b,
 .new-canvas ol i b,
+.new-canvas table i b,
 .new-canvas p em b,
 .new-canvas ul em b,
 .new-canvas ol em b,
+.new-canvas table em b,
 .new-canvas p i strong,
 .new-canvas ul i strong,
 .new-canvas ol i strong,
+.new-canvas table i strong,
 .new-canvas p em strong,
 .new-canvas ul em strong,
-.new-canvas ol em strong {
+.new-canvas ol em strong,
+.new-canvas table em strong {
   font-weight: 700;
 }
 .new-canvas a {
@@ -286,6 +300,52 @@ a.external:active span {
 .new-canvas div,
 .new-canvas section {
   box-sizing: border-box;
+}
+.new-canvas table {
+  background-color: #ffffff;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem auto;
+}
+@media screen and (min-width: 800px) {
+  .new-canvas table {
+    margin: 4rem auto;
+  }
+}
+.new-canvas table thead {
+  background-color: #00274C;
+  border: 1px solid #00274C;
+  color: #ffffff;
+}
+.new-canvas table th {
+  padding: 0.5rem 1rem;
+  border-right: 1px solid #ffffff;
+}
+.new-canvas table th:last-of-type {
+  border-right-color: #00274C;
+}
+.new-canvas table td {
+  padding: 1rem;
+  border: 1px solid #305CDE;
+}
+.new-canvas table.alternate-rows tbody tr {
+  border: 1px solid #305CDE;
+}
+.new-canvas table.alternate-rows tbody tr:nth-of-type(even) {
+  background-color: #def0fd;
+}
+.new-canvas table.alternate-rows tbody td {
+  border: none;
+}
+.new-canvas table.alternate-columns tbody {
+  border: 1px solid #305CDE;
+}
+.new-canvas table.alternate-columns td {
+  border: none;
+  border-right: 1px solid #305CDE;
+}
+.new-canvas table.alternate-columns td:nth-of-type(even) {
+  background-color: #def0fd;
 }
 .new-canvas section {
   border-bottom: 1px solid #acafab;
@@ -556,6 +616,35 @@ a.external:active span {
 }
 .new-canvas section.accordion summary + div {
   padding: 0.25rem 1.5rem;
+}
+.new-canvas .gamut-intro {
+  padding: 10rem 2rem 3rem 2rem;
+  border: 4px solid #ffffff;
+  border-radius: 40px;
+  margin-top: 2rem;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top 2rem;
+  background-size: 8rem auto;
+}
+@media screen and (min-width: 1100px) {
+  .new-canvas .gamut-intro {
+    padding: 14rem 3rem 3rem 3rem;
+    margin-top: 4rem;
+    background-size: 10rem auto;
+    background-position-y: 3rem;
+  }
+}
+.new-canvas .gamut-intro h2 {
+  text-align: center;
+}
+.new-canvas .gamut-intro.gallery {
+  border-color: #FF5B1A;
+  background-image: url('gamut-gallery_logo.png');
+}
+.new-canvas .gamut-intro.workbook {
+  border-color: #702082;
+  background-image: url('gamut-workbook_logo.png');
 }
 .new-canvas .graphical-highlight {
   background-color: #FFEA9B;
@@ -1654,8 +1743,6 @@ p.divisionLineYellow {
 .umich-table-col-stripe {
   width: 100%;
   border-collapse: collapse;
-  /* font-family: inherit; */
-  /* border: 2px solid #FFFFFF; */
   font-family: "Atkinson Hyperlegible", Arial;
   text-align: left;
 }
