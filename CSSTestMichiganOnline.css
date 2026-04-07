@@ -640,11 +640,11 @@ a.external:active span {
 }
 .new-canvas .gamut-intro.gallery {
   border-color: #FF5B1A;
-  background-image: url('gamut-gallery_logo.png');
+  background-image: url('https://shared-files.online.umich.edu/michigan-online/icons/current/Gallery-Logo.png');
 }
 .new-canvas .gamut-intro.workbook {
   border-color: #702082;
-  background-image: url('gamut-workbook_logo.png');
+  background-image: url('https://shared-files.online.umich.edu/michigan-online/icons/current/Workbook-Logo.png');
 }
 .new-canvas .graphical-highlight {
   background-color: #FFEA9B;
