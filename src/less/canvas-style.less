@@ -745,7 +745,7 @@ a.external:active span {
         }
     }
     
-    .gamut-intro {
+    .gamut-intro, .tool-intro {
         padding: 10rem 2rem 3rem 2rem;
         border: @line-thick solid @white;
         .rounded-medium;
@@ -774,6 +774,18 @@ a.external:active span {
         &.workbook {
             border-color: @purple;
             background-image: url('../assets/Workbook-Logo.png');
+        }
+        
+        &.codio {
+            border-color: @blue-warm;
+            background-image: url(../assets/Codio-Logo.svg);
+            background-size: 16rem auto;
+            background-position-y: 4rem;
+            
+            @media @desktop {
+                padding-top: 12rem;
+                background-size: 30rem auto;
+            }
         }
     }
     
