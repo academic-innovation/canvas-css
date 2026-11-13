@@ -85,7 +85,7 @@
     "title": "Text Block for introducing Gamut Gallery",
     "description": "Text block for introducing the Gamut Gallery tool within courses that use it.",
     "previewHtml": "<section class=\"text-block gamut-intro gallery\">\n  <h2>Instructions: Introduction to the Gamut Gallery</h2>\n <p>This is a text block for introducing the Gamut Gallery.</p>\n</section>",
-    "snippetHtml": "<section class=\"text-block gamut-intro gallery\">\n  <p>Text block content</p>\n</section>",
+    "snippetHtml": "<section class=\"text-block gamut-intro gallery\">\n  <h2>Heading goes here</h2>\n  <p>Text block content</p>\n</section>",
     "keywords": "new canvas text block gamut gallery introduction",
     "category": "Text Blocks, Tool Intros"
   },
@@ -94,7 +94,7 @@
     "title": "Text Block for introducing Gamut Workbook",
     "description": "Text block for introducing the Gamut Workbook tool within courses that use it.",
     "previewHtml": "<section class=\"text-block gamut-intro workbook\">\n  <h2>Instructions: Introduction to the Gamut Workbook</h2>\n <p>This is a text block for introducing the Gamut Workbook.</p>\n</section>",
-    "snippetHtml": "<section class=\"text-block gamut-intro workbook\">\n  <p>Text block content</p>\n</section>",
+    "snippetHtml": "<section class=\"text-block gamut-intro workbook\">\n  <h2>Heading goes here</h2>\n  <p>Text block content</p>\n</section>",
     "keywords": "new canvas text block gamut workbook introduction",
     "category": "Text Blocks, Tool Intros"
   },
@@ -103,7 +103,7 @@
     "title": "Text Block for introducing Codio",
     "description": "Text block for introducing the Codio tool within courses that use it.",
     "previewHtml": "<section class=\"text-block tool-intro codio\">\n  <h2>Instructions: Introduction to Codio</h2>\n <p>This is a text block for introducing Codio.</p>\n</section>",
-    "snippetHtml": "<section class=\"text-block tool-intro codio\">\n  <h2>Heading goes here</h2>\n <p>Text block content</p>\n</section>",
+    "snippetHtml": "<section class=\"text-block tool-intro codio\">\n  <h2>Heading goes here</h2>\n  <p>Text block content</p>\n</section>",
     "keywords": "new canvas text block codio introduction",
     "category": "Text Blocks, Tool Intros"
   },
