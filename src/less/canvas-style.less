@@ -776,9 +776,7 @@ a.external:active span {
             background-image: url('../assets/Workbook-Logo.png');
         }
         
-        &.codio {
-            border-color: @blue-warm;
-            background-image: url(../assets/Codio-Logo.svg);
+        &.codio, &.harmonize {
             background-size: 16rem auto;
             background-position-y: 4rem;
             
@@ -786,6 +784,16 @@ a.external:active span {
                 padding-top: 12rem;
                 background-size: 30rem auto;
             }
+        }
+
+        &.codio {
+            border-color: @blue-warm;
+            background-image: url(../assets/Codio-Logo.svg);
+        }
+
+        &.harmonize {
+            border-color: @blue-cool;
+            background-image: url(../assets/Harmonize-Logo.svg);
         }
     }
     

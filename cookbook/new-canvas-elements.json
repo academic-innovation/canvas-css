@@ -108,6 +108,15 @@
     "category": "Text Blocks, Tool Intros"
   },
   {
+    "id": "new-canvas-text-block-harmonize",
+    "title": "Text Block for introducing Harmonize",
+    "description": "Text block for introducing the Harmonize tool within courses that use it.",
+    "previewHtml": "<section class=\"text-block tool-intro harmonize\">\n  <h2>Instructions: Introduction to Harmonize</h2>\n <p>This is a text block for introducing Harmonize.</p>\n</section>",
+    "snippetHtml": "<section class=\"text-block tool-intro harmonize\">\n  <h2>Heading goes here</h2>\n <p>Text block content</p>\n</section>",
+    "keywords": "new canvas text block harmonize introduction",
+    "category": "Text Blocks, Tool Intros"
+  },
+  {
     "id": "new-canvas-callout-info",
     "title": "Information Callout Box",
     "description": "Informational callout box for definitions, reminders, and key takeaways.",
