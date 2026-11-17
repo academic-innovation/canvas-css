@@ -686,7 +686,73 @@ a.external:active span {
             }
         }
     }
-    
+
+    section.live-sessions {
+        display: flex;
+
+        img {
+            display: none;
+
+            @media @tablet {
+                display: block;
+                object-fit: cover;
+                width: 35%;
+                max-width: 400px;
+                height: auto;
+                mask-image: url('../assets/collage-mask_2.svg');
+                mask-position: right center;
+                mask-repeat: no-repeat; 
+                z-index: -1; 
+            }
+        }
+
+        div {
+            position: relative;  
+            padding: 3rem 3rem 4rem 3rem;
+            flex: 1;
+            align-content: center;
+
+            @media @tablet {
+                margin-left: -2rem;
+            }
+
+            @media @desktop {
+                padding-left: 4rem;
+            }
+
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: -1rem;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                border-radius: 2rem;
+                background-color: @um-maize;
+                transform: skewY(5deg);
+            }
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin: 1rem 0;
+        }
+
+        h3 {
+            .type-display-serif;
+            font-weight: 300;
+            font-size: 2.5rem;
+            line-height: 3rem;
+            margin: 1rem 0 3rem 0;
+
+            span {
+                display: block;
+            }
+        }
+    }
+
     section.accordion {
         border-bottom: none;
         padding: 2rem 0;
