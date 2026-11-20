@@ -351,6 +351,24 @@
     "category": "Tables"
   },
   {
+    "id": "new-canvas-table-row-col-headers",
+    "title": "Table with Row and Column Headers",
+    "description": "An accessible data table with a caption plus both column headers and row headers.",
+    "previewHtml": "<div class=\"table-container\"><table><caption>Delivery slots:</caption><tr><th scope=\"col\">test</th><th scope=\"col\">Monday</th><th scope=\"col\">Tuesday</th><th scope=\"col\">Wednesday</th><th scope=\"col\">Thursday</th><th scope=\"col\">Friday</th></tr><tr><th scope=\"row\">09:00 – 11:00</th><td>Closed</td><td>Open</td><td>Open</td><td>Closed</td><td>Closed</td></tr><tr><th scope=\"row\">11:00 – 13:00</th><td>Open</td><td>Open</td><td>Closed</td><td>Closed</td><td>Closed</td></tr></table></div>",
+    "snippetHtml": "<div class=\"table-container\">\n  <table>\n    <caption>Table caption goes here</caption>\n    <tr>\n      <th scope=\"col\">Label</th>\n      <th scope=\"col\">Column Header</th>\n      <th scope=\"col\">Column Header</th>\n      <th scope=\"col\">Column Header</th>\n      <th scope=\"col\">Column Header</th>\n      <th scope=\"col\">Column Header</th>\n    </tr>\n    <tr>\n      <th scope=\"row\">Row Header</th>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n    </tr>\n    <tr>\n      <th scope=\"row\">Row Header</th>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n    </tr>\n  </table>\n</div>",
+    "keywords": "new canvas table schedule caption row header column header scope accessible",
+    "category": "Tables"
+  },
+  {
+    "id": "new-canvas-table-row-headers-blank-corner",
+    "title": "Table with Row and Column Headers (Blank Corner Cell)",
+    "description": "An accessible data table with a caption plus both column headers and row headers, with a blank cell in the top-left corner instead of a header label.",
+    "previewHtml": "<div class=\"table-container\"><table><caption>Delivery slots:</caption><tr><td></td><th scope=\"col\">Monday</th><th scope=\"col\">Tuesday</th><th scope=\"col\">Wednesday</th><th scope=\"col\">Thursday</th><th scope=\"col\">Friday</th></tr><tr><th scope=\"row\">09:00 – 11:00</th><td>Closed</td><td>Open</td><td>Open</td><td>Closed</td><td>Closed</td></tr><tr><th scope=\"row\">11:00 – 13:00</th><td>Open</td><td>Open</td><td>Closed</td><td>Closed</td><td>Closed</td></tr></table></div>",
+    "snippetHtml": "<div class=\"table-container\">\n  <table>\n    <caption>Table caption goes here</caption>\n    <tr>\n      <td></td>\n      <th scope=\"col\">Column Header</th>\n      <th scope=\"col\">Column Header</th>\n      <th scope=\"col\">Column Header</th>\n      <th scope=\"col\">Column Header</th>\n      <th scope=\"col\">Column Header</th>\n    </tr>\n    <tr>\n      <th scope=\"row\">Row Header</th>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n    </tr>\n    <tr>\n      <th scope=\"row\">Row Header</th>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n      <td>Sample text here</td>\n    </tr>\n  </table>\n</div>",
+    "keywords": "new canvas table schedule caption row header column header scope accessible blank corner",
+    "category": "Tables"
+  },
+  {
     "id": "new-canvas-course-display-header",
     "title": "Course Display Header",
     "description": "A special component for a fancy header on the Course Intro page; it should be used only for this purpose.",
