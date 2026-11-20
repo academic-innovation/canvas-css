@@ -312,24 +312,46 @@ a.external:active span {
             margin: 4rem auto;
         }
         
-        thead {
+        thead, 
+        th[scope="row"], 
+        th[scope="col"] {
             background-color: @um-blue;
             border: @line-thin solid @um-blue;
             color: @white;
         }
         
-        th {
+        th, th[scope="col"] {
             padding: .5rem 1rem;
             border-right: @line-thin solid @white;
+            border-bottom: @line-thin solid @white;
             
             &:last-of-type {
                 border-right-color: @um-blue;
             }
         }
+
+        th[scope="row"] {
+            padding: 1rem;
+            border-bottom: @line-thin solid @white;
+        }
+
+        th[scope="col"] {
+            padding: 1rem;
+        }
+
+        tr:last-of-type th[scope="row"] {
+            border-bottom-color: @um-blue;
+        }
         
         td {
             padding: 1rem !important;
             border: @line-thin solid @blue-cool;
+        }
+
+        caption {
+            .type-display-serif;
+            font-style: italic;
+            margin-bottom: 0.5rem;
         }
         
         &.alternate-rows {
