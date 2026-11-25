@@ -437,11 +437,17 @@ a.external:active span {
                 margin: 2rem 0 1rem 0;
             }
             
-            .callout-box, .two-col {                
+            .callout-box, 
+            .two-col, 
+            .unset-img-width {                
                 h3 {
                     margin: 1.5rem 0;
                     
                     &:after {display: none;}
+                }
+
+                h4 {
+                    margin-top: 0;
                 }
             }
             
@@ -1099,10 +1105,6 @@ a.external:active span {
                 width: 50%;
             }
             
-            h4 {
-                margin-top: 0;
-            }
-            
             img {
                 display: block;
                 width: 100%;
@@ -1293,8 +1295,8 @@ a.external:active span {
             margin-bottom: 1rem;
         }
         
-        h4 {
-            margin-top: 0;
+        h3, h4 {
+            margin: 1.5rem 0;
         }
         
         img {
