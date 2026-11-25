@@ -1309,6 +1309,16 @@ a.external:active span {
                 height: fit-content;
             }
         }
+
+        &.circle-img {
+            img {
+                display: block;
+                border-radius: 50%;
+                border: @line-thick solid @um-blue;
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+            }
+        }
     }
 }
 
